@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+    let arr = new Array();
+    amount = +prompt('Enter amount : ');
+    for (let i = 0; i < amount; i++) {
+        arr[i] = prompt('Enter a characters of array : ');
+    }
+    document.write('Array is : ' + arr + '<br>');
+    let str = arr.toString();
+    for (let i = 0; i < str.length; i++) {
+        str = str.replace(/-/g, '_');
+        arr = str;
+    }
+    document.write(arr);
+</script>
+</body>
+</html>
